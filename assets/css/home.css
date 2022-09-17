@@ -37,12 +37,6 @@ div.main-container section.hero-container div.left-content a.btnShop {
   color: white;
   font-weight: bold;
   border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-div.main-container section.hero-container div.left-content a.btnShop:hover {
-  box-shadow: 2px 2px #53a7ea, 4px 4px #53a7ea, 6px 6px #53a7ea;
-  transform: translateX(17px);
 }
 div.main-container section.hero-container div.right-content {
   display: none;
@@ -256,25 +250,6 @@ section.about-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  div.main-container section.product-container div.item-container div.card-container a.addItemBtn {
-    color: #fff;
-    background-color: #6F42C1;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0 0 4px #999;
-    background-position: center;
-    transition: background 0.6s;
-  }
-  div.main-container section.product-container div.item-container div.card-container a.addItemBtn:hover {
-    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-    color: white;
-  }
-  div.main-container section.product-container div.item-container div.card-container a.addItemBtn:active {
-    background-color: #292d3e;
-    background-size: 100%;
-    transition: background 0s;
-  }
 }
 @media screen and (min-width: 1063px) {
   div.main-container section.hero-container {
@@ -353,4 +328,4 @@ section.about-container {
   div.main-container section.store-container div.info-content div.body-info p {
     font-size: 14px;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=home.css.map */

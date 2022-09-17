@@ -296,6 +296,27 @@ section.about-container{
           align-items: center;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
+          div.card-container{
+            a.addItemBtn{
+              color: #fff;
+              background-color: $bg-violet;
+              border-radius: 4px;
+              cursor: pointer;
+              font-size:14px;
+              box-shadow: 0 0 4px #999;
+              background-position: center;
+              transition: background 0.6s;
+            }
+            a.addItemBtn:hover {
+              background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+              color: white;
+              }
+              a.addItemBtn:active{
+              background-color:#292d3e;
+              background-size: 100%;
+              transition: background 0s;
+              }
+          }
         }
       }
     }
@@ -323,10 +344,11 @@ section.about-container{
       grid-template-columns: 1fr 1fr;
         div.left-content{
           h1{
-            font-size: 48px;
+            padding-top: 1em;
+            font-size: 38px;
           }
           p{
-            font-size: 20px;
+            font-size: 16px;
             width: 450px;
           }
         }
@@ -347,7 +369,7 @@ section.about-container{
         div.body-info{
           h5{
             font-size: 18px;
-            font-weight: 800;
+            font-weight: bold;
           }
         }
       }
@@ -356,10 +378,10 @@ section.about-container{
       padding: 4em 8em;
       div.search-container{
         input{
-          padding: 1em;
+          padding: .4em;
         }
         label{
-          font-size: 24px;
+          font-size: 16px;
           align-items: center;
         }
       }
@@ -367,12 +389,31 @@ section.about-container{
   }
 }
 
-// @media screen and (min-width: 1440px){
-//   section.hero-container{
-//     div.left-content{
-//       h1{
-//         font-size: 58px;
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 1280px){
+  div.main-container{
+    section.hero-container{
+      div.left-content{
+        h1{
+          padding-top: .4em;
+          font-size: 43px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+    section.store-container{
+      div.store{
+        gap: 7em;
+      }
+      div.info-content{
+        div.body-info{
+          p{
+            text-align: left;
+            width: 378px;
+          }
+        }
+      }
+    }
+  }
+}

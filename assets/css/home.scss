@@ -48,17 +48,7 @@ div.main-container{
         color: #ffff;
         font-weight: bold;
         border-radius: 3px;
-    
-
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
       }
-
-      a.btnShop:hover {
-        // box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
-        box-shadow: 2px 2px #53a7ea, 4px 4px #53a7ea, 6px 6px #53a7ea;
-        transform: translateX(17px);
-        }
     }
     div.right-content{
       display: none;
@@ -105,6 +95,7 @@ section.product-container{
       button{
         text-transform: capitalize;
         font-size: 14px;
+      
       }
     }
   }
@@ -305,28 +296,6 @@ section.about-container{
           align-items: center;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
-
-          div.card-container{
-            a.addItemBtn{
-              color: #fff;
-              background-color: $bg-violet;
-              border-radius: 4px;
-              cursor: pointer;
-              font-size:14px;
-              box-shadow: 0 0 4px #999;
-              background-position: center;
-              transition: background 0.6s;
-            }
-            a.addItemBtn:hover {
-              background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-              color: white;
-              }
-              a.addItemBtn:active{
-              background-color:#292d3e;
-              background-size: 100%;
-              transition: background 0s;
-              }
-          }
         }
       }
     }
