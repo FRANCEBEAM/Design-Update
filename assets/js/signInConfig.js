@@ -1,3 +1,4 @@
+const form = document.getElementById("form");
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 
@@ -22,3 +23,10 @@ function checkPassword(password){
     document.querySelector('.errorEmail') = "";
   }
 }
+
+form.addEventListener('submit', (e)=>{
+  e.preventDefault()
+  
+  checkEmail(email, db);
+  checkPassword(password, db);
+})
