@@ -47,17 +47,30 @@ div.main-container{
     }
     form{
       margin-top: 9em;
-      input{
-        margin-bottom: 2em;
-      }
+      // input{
+      //   margin-bottom: 1.7em;
+      // }
       button{
         background: #2C52D8;
         font-weight: bold;
         text-transform: capitalize;
       }
+      small{
+        margin: 0;
+      }
     }
-
   }
+}
+
+div.col{
+  margin-bottom: 2em;
+}
+
+div.col small{
+  position: absolute;
+  // bottom: 0;
+  // left: 0;
+  visibility: hidden;
 }
 
 

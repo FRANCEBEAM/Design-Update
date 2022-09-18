@@ -47,8 +47,8 @@ div.main-container{
     }
     form{
       margin-top: 9em;
-      input{
-        margin-bottom: 2em;
+      input.form-control{
+        margin-top: 3em;
       }
       button{
         background: #2C52D8;
@@ -56,9 +56,18 @@ div.main-container{
         text-transform: capitalize;
       }
     }
-
   }
 }
+
+div.col{
+  margin-bottom: 1.2em;
+}
+
+div.col small{
+  position: absolute;
+  // visibility: hidden;
+}
+
 
 
 @media screen and(min-width: 574px){

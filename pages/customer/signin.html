@@ -73,19 +73,26 @@
       <small>We Happy to see you Again. To use your account you should log in first.</small>
       <form>
         <!-- Email input -->
-        <div class="form-outline mb-4">
-          <input type="email" id="form2Example1" class="form-control form-control-lg"/>
-          <label class="form-label" for="form2Example1"><i class="fas fa-user-alt" ></i> Email address</label>
+        <div class="col">
+        <div class="form-outline">
+          <input type="email" id="email" class="form-control form-control-lg"/>
+          <label class="form-label" for="email"><i class="fas fa-user-alt" ></i> Email address</label>
+        </div>
+        <small class="errorEmail"></small>
         </div>
       
         <!-- Password input -->
-        <div class="form-outline mb-4">
-          <input type="password" id="form2Example2" class="form-control form-control-lg" />
-          <label class="form-label" for="form2Example2"><i class="fas fa-unlock"></i> Password</label>
+        <div class="col">
+        <div class="form-outline">
+          <input type="password" id="password" class="form-control form-control-lg" />
+          <label class="form-label" for="password"><i class="fas fa-unlock"></i> Password</label>
         </div>
+        <small class="errorPass"></small>
+       </div>
+        
       
         <!-- 2 column grid layout for inline styling -->
-        <div class="row mb-4">
+        <div class="row mb-4 mt-5">
           <div class="col d-flex justify-content-center">
             <!-- Checkbox -->
             <div class="form-check">
@@ -118,5 +125,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
   AOS.init();
 </script>
 <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+<script src="/assets/js/signInConfig.js"></script>
 </body>
 </html>

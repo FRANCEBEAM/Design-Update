@@ -71,44 +71,64 @@
     <div class="right-content">
       <h1>Create New Account <span><img src="/assets/img/fire.png" alt=""></span></h1>
       <small>Please fill in the forms to continue.</small>
-      <form>
+      <form id="form" class="form">
         <!-- 2 column grid layout with text inputs for the first and last names -->
-        <div class="row mb-4">
+        <div class="row">
           <div class="col">
             <div class="form-outline">
-              <input type="text" id="form3Example1" class="form-control" />
-              <label class="form-label" for="form3Example1">First name</label>
+              <input type="text" class="form-control" id="firstName"/>
+              <label class="form-label" for="firstName">First name</label>
             </div>
+            <small class="errorFirst"></small>
           </div>
           <div class="col">
             <div class="form-outline">
-              <input type="text" id="form3Example2" class="form-control" />
-              <label class="form-label" for="form3Example2">Last name</label>
+              <input type="text" id="lastName" class="form-control" />
+              <label class="form-label" for="lastName">Last name</label>
             </div>
+            <small class="errorLast"></small>
           </div>
+        </div>
+
+          <!-- Username input -->
+          <div class="col">
+          <div class="form-outline">
+            <input type="text" class="form-control" id="username"/>
+            <label class="form-label" for="username">Username</label>
+          </div>
+          <small class="errorUsername"></small>
         </div>
 
         <!-- Email input -->
-        <div class="form-outline mb-4">
-          <input type="email" id="form3Example3" class="form-control" />
-          <label class="form-label" for="form3Example3">Email address</label>
+        <div class="col">
+        <div class="form-outline">
+          <input type="email" class="form-control" id="email"/>
+          <label class="form-label" for="email">Email address</label>
         </div>
+        <small class="errorEmail"></small>
+      </div>
       
         <!-- Password input -->
-        <div class="form-outline mb-4">
-          <input type="password" id="form3Example4" class="form-control" />
-          <label class="form-label" for="form3Example4">Password</label>
+        <div class="col">
+        <div class="form-outline">
+          <input type="password" class="form-control" id="password"/>
+          <label class="form-label" for="password">Password</label>
         </div>
+        <small class="errorPass"></small>
+      </div>
 
-        <!-- Password input -->
-        <div class="form-outline mb-4">
-          <input type="password" id="form3Example4" class="form-control" />
-          <label class="form-label" for="form3Example4">Confirm Password</label>
+        <!-- Confirm Password input -->
+        <div class="col mb-4">
+        <div class="form-outline">
+          <input type="password" class="form-control" id="conpassword"/>
+          <label class="form-label" for="conpassword">Confirm Password</label>
         </div>
+        <small class="errorConpass"></small>
+      </div>
       
         <!-- Checkbox -->
-        <div class="form-check d-flex justify-content-center mb-4">
-          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+        <div class="form-check d-flex justify-content-center mb-4 mt-5">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" required/>
           <label class="form-check-label" for="form2Example33">
             I agree to terms & conditions.
           </label>
@@ -129,5 +149,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
 <script>
   AOS.init();
 </script>
+<script src="/assets/js/signupConfig.js"></script>
 </body>
 </html>

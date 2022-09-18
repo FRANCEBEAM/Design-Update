@@ -34,13 +34,21 @@ div.main-container div.right-content small {
 div.main-container div.right-content form {
   margin-top: 9em;
 }
-div.main-container div.right-content form input {
-  margin-bottom: 2em;
+div.main-container div.right-content form input.form-control {
+  margin-top: 3em;
 }
 div.main-container div.right-content form button {
   background: #2C52D8;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+div.col {
+  margin-bottom: 1.2em;
+}
+
+div.col small {
+  position: absolute;
 }
 
 @media screen and (min-width: 768px) {
