@@ -21,8 +21,13 @@ div.main-container section.hero-container {
 div.main-container section.hero-container div.left-content {
   text-align: center;
 }
+div.main-container section.hero-container div.left-content small {
+  color: #6d6d6d;
+  font-size: 16px;
+  font-weight: 700;
+}
 div.main-container section.hero-container div.left-content h1 {
-  font-size: 32px;
+  font-size: 38px;
   color: #1D1E23;
   font-weight: 700;
 }
@@ -175,37 +180,38 @@ section.about-container {
     padding: 0 3em;
   }
   div.main-container {
-    padding: 4em 0;
+    padding: 1em 0;
   }
   div.main-container section.hero-container {
+    background-image: url(/assets/img/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     box-shadow: none;
     padding: 4em 4em;
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1fr;
   }
   div.main-container section.hero-container div.left-content {
     padding-top: 3em;
     text-align: left;
     margin: 0;
   }
+  div.main-container section.hero-container div.left-content small {
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 600;
+  }
   div.main-container section.hero-container div.left-content h1 {
-    font-size: 28px;
+    font-size: 38px;
     margin-bottom: 1em;
+    color: #fff;
   }
   div.main-container section.hero-container div.left-content p {
-    font-size: 16px;
+    color: #fff;
+    font-size: 14px;
     padding: 0;
     margin-bottom: 1.8em;
-  }
-  div.main-container section.hero-container div.right-content {
-    display: block;
-  }
-  div.main-container section.hero-container div.right-content img {
-    display: flex;
-    justify-content: flex-end;
-    width: 500px;
-    right: 0;
-    float: inline-end;
   }
   div.main-container section.store-container {
     padding: 4em 4em;
@@ -278,10 +284,10 @@ section.about-container {
 }
 @media screen and (min-width: 1063px) {
   div.main-container section.hero-container {
-    padding: 4em 4em;
+    padding: 6em 4em;
   }
   div.main-container section.hero-container div.left-content h1 {
-    font-size: 34px;
+    font-size: 42px;
   }
   div.main-container section.hero-container div.left-content p {
     font-size: 14px;
@@ -289,9 +295,10 @@ section.about-container {
 }
 @media screen and (min-width: 1144px) {
   div.main-container section.hero-container {
-    padding: 4em 4em;
+    padding: 8em 4em;
   }
   div.main-container section.hero-container div.left-content h1 {
+    font-size: 46px;
     align-items: center;
     justify-items: center;
   }
@@ -304,16 +311,23 @@ section.about-container {
     padding: 0 7em;
   }
   div.main-container section.hero-container {
-    padding: 4em 8em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 12em 8em;
+  }
+  div.main-container section.hero-container div.left-content small {
+    font-size: 20px;
   }
   div.main-container section.hero-container div.left-content h1 {
-    padding-top: 1em;
-    font-size: 38px;
+    font-size: 54px;
+    margin: 0;
   }
   div.main-container section.hero-container div.left-content p {
+    padding-top: 1.4em;
     font-size: 16px;
     width: 450px;
+  }
+  div.main-container section.hero-container div.left-content a.btnShop {
+    padding: 1.3em;
   }
   div.main-container section.hero-container div.right-content img {
     width: 600px;
@@ -340,9 +354,11 @@ section.about-container {
   }
 }
 @media screen and (min-width: 1280px) {
+  div.main-container section.hero-container div.left-content {
+    grid-template-columns: 1fr 1fr;
+  }
   div.main-container section.hero-container div.left-content h1 {
-    padding-top: 0.4em;
-    font-size: 43px;
+    font-size: 72px;
   }
   div.main-container section.hero-container div.left-content p {
     font-size: 18px;

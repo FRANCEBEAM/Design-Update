@@ -57,6 +57,9 @@ div.col small {
   }
 }
 @media screen and (min-width: 993px) {
+  body {
+    overflow: hidden;
+  }
   nav {
     padding: 0 3em;
   }
@@ -91,6 +94,14 @@ div.col small {
   }
   div.main-container div.form-container div.right-content form {
     margin-top: 2em;
+  }
+  div.main-container div.form-container div.right-content form button {
+    box-shadow: inset 0 0 0 #5BB318;
+    transition: ease-out 0.4s;
+  }
+  div.main-container div.form-container div.right-content form button:hover {
+    box-shadow: inset 600px 0 0 0 #5BB318;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1109px) {

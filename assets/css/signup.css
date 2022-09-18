@@ -58,11 +58,14 @@ div.col small {
   }
 }
 @media screen and (min-width: 993px) {
+  body {
+    overflow: hidden;
+  }
   nav {
     padding: 0 3em;
   }
   div.main-container div.form-container {
-    padding: 4em 4em;
+    padding: 0.4em 4em;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
   }
@@ -93,10 +96,18 @@ div.col small {
   div.main-container div.form-container div.right-content form {
     margin-top: 2em;
   }
+  div.main-container div.form-container div.right-content form button {
+    box-shadow: inset 0 0 0 #5BB318;
+    transition: ease-out 0.4s;
+  }
+  div.main-container div.form-container div.right-content form button:hover {
+    box-shadow: inset 600px 0 0 0 #5BB318;
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1109px) {
   div.main-container {
-    padding: 4em 0.7em;
+    padding: 2em 0.7em;
   }
   div.main-container div.form-container {
     grid-template-columns: 1fr 1fr;
@@ -111,7 +122,7 @@ div.col small {
     padding: 0 7em;
   }
   div.main-container div.form-container {
-    padding: 4em 8em;
+    padding: 3.7em 8em;
   }
   div.main-container div.form-container div.left-content img {
     width: 90%;
@@ -119,18 +130,21 @@ div.col small {
 }
 @media screen and (min-width: 1280px) {
   div.main-container {
-    padding: 5em 3em;
+    padding: 4em 3em;
   }
   div.main-container div.form-container {
-    padding: 4em 8em;
+    padding: 1em 8em;
   }
   div.main-container div.form-container div.left-content img {
     width: 500px;
   }
 }
 @media screen and (min-width: 1380px) {
+  body {
+    overflow: hidden;
+  }
   div.main-container {
-    padding: 5em 12em;
+    padding: 2em 12em;
   }
   div.main-container div.form-container {
     padding: 4em 3em;
